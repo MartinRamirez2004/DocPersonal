@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.general {
+    padding: 4%;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+.general > h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 3vw);
+}
+.general > h2 {
+
+}
+.general > p {
+    padding-bottom: 1%;
+    text-align: justify;
+}
+.general_uno {
+    padding: 4%;
+    background-color: #151515;
+}
+.general_uno > p {
+    padding-bottom: 1%;
+}
