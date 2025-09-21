@@ -63,3 +63,73 @@ html {
         justify-content: center;
     }
 }
+
+/*Titulo principal*/
+.titulo {
+    background-color: #000000;
+    color: #8E1616;
+    font-size: clamp(10rem, 5vw, 3vw);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 5% 0;
+}
+
+/*Seccion base (fondo de la pagina)*/
+.base {
+    background-color: #000000;
+}
+
+/*Seccion general*/
+/*Division a 2 columnas*/
+.general {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+/*Primera columna*/
+.general_uno {
+    background-color: #8E1616;
+    align-items: center;
+    padding: 4%;
+}
+.general_uno > h2 {
+    font-size: 1.5rem;
+    color: #F8EEDF;
+}
+
+/*Segunda columna*/
+.general_dos {
+    padding: 4%;
+    background-color: #151515;
+    align-items: center;
+}
+.general_dos > p {
+    color: #F8EEDF;
+    font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+    *{
+        margin: 0;
+    }
+    .general {
+        padding: 10%;
+    }
+    .general > h1 {
+        font-size: clamp(5rem, 7vw, 10vw);
+        padding-bottom: 2%;
+    }
+    .general > h2 {
+        font-size: clamp(1.5rem, 5vw, 7vw);
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .general > p {
+        font-size: clamp(1rem, 3vw, 5vw);
+    }
+    .general_uno {
+        padding: 10%;
+    }
+
+}
