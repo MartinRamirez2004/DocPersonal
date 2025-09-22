@@ -81,6 +81,7 @@ html {
 
 /*Seccion general*/
 /*Division a 2 columnas*/
+/*Seccion comandos de git*/
 .general {
     display: flex;
     justify-content: space-around;
@@ -92,13 +93,12 @@ html {
 .general_uno {
     background-color: #8E1616;
     align-items: center;
-    padding: 4%;
+    padding: 5%;
 }
 .general_uno > h2 {
     font-size: 1.5rem;
     color: #F8EEDF;
 }
-
 /*Segunda columna*/
 .general_dos {
     padding: 4%;
@@ -108,6 +108,32 @@ html {
 .general_dos > p {
     color: #F8EEDF;
     font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 6px;
+}
+/*Seccion comandos de git*/
+.comandos {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+.comandos_title {
+    background-color: #8E1616;
+    padding: 5%;
+}
+.comandos_title > h3 {
+    font-size: 1.5rem;
+    color: #F8EEDF;
+}
+.comandos_body {
+    background-color: #151515;
+    padding: 5%;
+}
+.comandos_body > p {
+    color: #F8EEDF;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 6px;
 }
 @media (max-width: 768px) {
     *{

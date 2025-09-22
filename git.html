@@ -26,18 +26,15 @@
     <section class="base">
         <div class="general" id="acerca_de">
             <div class="general_uno">
-                <h2>Acerca de esta guia:</h2>
+                <h2>Acerca de esta guia</h2>
             </div>
             <div class="general_dos">
                 <p>Esta guia fue creada como referencia rapida de los comandos mas usados en GIT, ademas de tener una explicacion breve de cada uno.</p>
                 <p>Los comandos y explicaciones fueron sacados de diferentes fuentes, como documentacion oficial, videos y articulos.</p>
                 <br>
-                <p>El objetivo es tener una guia personal para recordar los comandos y su funcion.</p>
                 <p>El contenido puede estar incompleto o tener errores, por lo que se recomienda siempre revisar la documentacion oficial o fuentes confiables.</p>
                 <p>El contenido sera actualizado constantemente, por lo que se recomienda revisar la guia regularmente.</p>
                 <p>El contenido esta dividido en secciones para facilitar la busqueda de informacion.</p>
-                <p>Si tienes alguna sugerencia o correccion, no dudes en contactarme.</p>
-                <p>Espero que esta guia te sea de utilidad.</p>
             </div>
         </div>
         <div class="general" id="que_es_git">
@@ -53,6 +50,8 @@
         <div class="general" id="configuracion">
             <div class="general_uno">
                 <h2>Configuración de GIT</h2>
+            </div>
+            <div class="general_dos">
                 <p>Git Bash: es una aplicacion la cual sirve como interprete de linea de comandos similar al entorno de Linux, donde podemos realizar comandos y configuraciones de GIT</p>
                 <p>En configuracion manejamos 3 jerarquias, sistema, global y local.</p>
                 <p>El alcance <b>local</b> es solamente para el repositorio en el cual estamos trabajando</p>
@@ -61,40 +60,64 @@
                 <p>En caso de tengamos diferentes nombres en local, global y sistema siempre se le dara mas prioridad al nombre en el area mas chica, en este caso en <b>local</b></p>
             </div>
         </div>
-        <div class="general_dos">
-            <h3>Comandos de configuracion: </h3>
-            <p>Lista configuraciones: "git config --list". Muestra configuraciones por defecto.</p>
-            <p>Lista configuraciones global: "git config --global --list". Muestra las configuraciones que hicimos en global.</p>
-            <p>Configuracion global: <b>git config --global</b>. De igual manera podemos hacer: <b>--local</b> y <b>--system</b></p>
-            <p>Configurar usuario: <b>git config --global user.name "nuestro_nombre"</b>.</p>
-            <p>Configurar correo: <b>git config --global user.email "nuestro_email"</b>.</p>
-            <p>Configurar VS editor predeterminado: <b>git config --global core.editor "code --wait"</b>. "code" es la palabra reservada que hace referencia a Visual Studio Code</p>
-            <p>Limpiar consola: <b>clear</b>.</p>
-            <p>Activar colorizado: <b>git config --global color.ui true</b>. Las salidas en pantalla seran mas coloridas.</p>
-            <p>Configurar \r y \n: <b>git config --global core.autocrlf true(windows) input(Linux, Unix o Mac)</b>. Carriage Return "CR o \r" devuelve el cursor al principio de la linea y Line Feed "LF o \n" mueve el cursos hacia abajo de la siguiente linea. Estas configuraciones son aplicables para windows, Linux, Mac y Unix son diferentes.</p>
+        <div class="comandos">
+            <div class="comandos_title">
+                <h3>Comandos de configuracion: </h3>
+            </div>
+            <div class="comandos_body">
+                <p>Lista configuraciones: "git config --list". Muestra configuraciones por defecto.</p>
+                <p>Lista configuraciones global: "git config --global --list". Muestra las configuraciones que hicimos en global.</p>
+                <p>Configuracion global: <b>git config --global</b>. De igual manera podemos hacer: <b>--local</b> y <b>--system</b></p>
+                <p>Configurar usuario: <b>git config --global user.name "nuestro_nombre"</b>.</p>
+                <p>Configurar correo: <b>git config --global user.email "nuestro_email"</b>.</p>
+                <p>Configurar VS editor predeterminado: <b>git config --global core.editor "code --wait"</b>. "code" es la palabra reservada que hace referencia a Visual Studio Code</p>
+                <p>Limpiar consola: <b>clear</b>.</p>
+                <p>Activar colorizado: <b>git config --global color.ui true</b>. Las salidas en pantalla seran mas coloridas.</p>
+                <p>Configurar \r y \n: <b>git config --global core.autocrlf true(windows) input(Linux, Unix o Mac)</b>. Carriage Return "CR o \r" devuelve el cursor al principio de la linea y Line Feed "LF o \n" mueve el cursos hacia abajo de la siguiente linea. Estas configuraciones son aplicables para windows, Linux, Mac y Unix son diferentes.</p>
+            </div>
         </div>        
-        <h2>Primeros pasos</h2>
-        <div class="general_uno">
-            <h3>Comandos para moverse entre directorios: </h3>
-            <p><b>ls</b>: Muestra carpetas. <b>ls -a</b>: Mostrar archivos ocultos.</p>
-            <p><b>pwd</b>: Nos indica donde estamos.</p>
-            <p><b>cd Carpeta/</b>: Entrar a la carpeta especificada.</p>
-            <p><b>cd ..</b>: Devolverse a carpeta anterior.</p>
-            <p><b>mkdir Carpeta</b>: Crear carpeta</p>
-            <p><b>rmdir Carpeta</b>: Borrar carpeta</p>
+        <div class="comandos">
+            <div class="comandos_title">
+                <h3>Comandos para moverse entre directorios</h3>
+            </div>
+            <div class="comandos_body">
+                <p><b>ls</b>: Muestra carpetas. <b>ls -a</b>: Mostrar archivos ocultos.</p>
+                <p><b>pwd</b>: Nos indica donde estamos.</p>
+                <p><b>cd Carpeta/</b>: Entrar a la carpeta especificada.</p>
+                <p><b>cd ..</b>: Devolverse a carpeta anterior.</p>
+                <p><b>mkdir Carpeta</b>: Crear carpeta</p>
+                <p><b>rmdir Carpeta</b>: Borrar carpeta</p>
+            </div>
         </div>
-        <div class="general_uno">
-            <p><b>git init</b>: Inicializar git</p>
-            <p><b>git add nombre_archivo</b>: Sube un archivo a stage.</p>
-            <p><b>git rm --cached nombre_archivo</b>: Quita el archivo subido a stage</p>
-            <p><b>git status</b>: Nos muestra informacion de nuestro directorio de trabajo y el area de preparacion.</p>
-            <p><b>git commit -m "mensaje de cambio"</b>: Hacemos un commit en la rama donde nos encontremos.</p>
-            <p><b>git commit -a</b>: Hace un commit saltandose los pasos anteriores.</p>
+        <div class="comandos">
+            <div class="comandos_title">
+                <h3>Comandos basicos</h3>
+            </div>
+            <div class="comandos_body">
+                <p><b>git init</b>: Inicializar git</p>
+                <p><b>git add nombre_archivo</b>: Sube un archivo a stage.</p>
+                <p><b>git rm --cached nombre_archivo</b>: Quita el archivo subido a stage</p>
+                <p><b>git status</b>: Nos muestra informacion de nuestro directorio de trabajo y el area de preparacion.</p>
+                <p><b>git commit -m "mensaje de cambio"</b>: Hacemos un commit en la rama donde nos encontremos.</p>
+                <p><b>git commit -a</b>: Hace un commit saltandose los pasos anteriores.</p>
+            </div>
         </div>
-        <h2>Restore, Checkout y más</h2>
-        <p>Como es de imaginarse podemos borrar archivos de los repositorios, aqui veremos que comandos podemos hacer y como es el proceso para eliminar cosas correctamente</p>
-        <div class="general_uno">
-            <p><b>rm nombre_archivo</b>:Borra un archivo.</p>
+        <div class="general" id="RCM">
+            <div class="general_uno">
+                <h2>Restore, Checkout y más</h2>
+            </div>
+            <div class="general_dos">
+                <p>Como es de imaginarse podemos borrar archivos de los repositorios, aqui veremos que comandos podemos hacer y como es el proceso para eliminar cosas correctamente</p>
+            </div>
+        </div>        
+        <div class="comandos">
+            <div class="comandos_title">
+                <h3>Comandos para borrar archivos</h3>
+            </div>
+            <div class="comandos_body">
+                <p><b>git restore nombre_archivo</b>: Restaura un archivo a su estado original, si el archivo fue modificado pero no se ha hecho commit.</p>
+                <p><b>rm nombre_archivo</b>:Borra un archivo.</p>
+            </div>
         </div>
     </section>
 </body>
