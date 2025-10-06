@@ -1,0 +1,133 @@
+/*Ajustes generales*/
+* {
+	font-family: 'Alan Sans', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+/*Seccion de inicio*/
+.inicio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 10px 5%;
+	background-color: #8E1616;
+}
+.menu_desplegable > ul {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+.menu_desplegable > ul > li {
+	flex: 1 1 150px;
+	text-align: center;
+}
+.menu_desplegable > ul > li > a {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	border-radius: 50px;
+	text-decoration: none;
+	color: #F8EEDF;
+	font-weight: 600;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+.menu_desplegable > ul > li > a:hover {
+	background-color: rgb(255, 255, 255);
+	color: #151515;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transform: translateY(-2px);
+}
+@media (max-width: 1024px) {
+	.menu_desplegable > ul {
+		flex-direction: column;
+		gap: 10px;
+	}
+	.menu_desplegable > ul > li {
+		flex: 1 1 auto;
+	}
+}
+@media (max-width:768px) {
+	.inicio {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.menu_desplegable > ul {
+		justify-content: center;
+	}
+}
+
+/*Seccion de titulo*/
+.titulo {
+	background-color: #59AC77;
+	color: #F8EEDF;
+	font-size: clamp(5rem, 5vw, 3vw);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 5% 0;
+}
+
+/*Seccion de contenido*/
+.secciones {
+	padding: 20px 5%;
+	background-color: #59AC77;
+}
+.seccion_uno {
+	padding: 50px 0;
+	background-image: url('../../imagenes/python/imagen_seccion_uno.jpeg');
+	border-radius: 30px;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+.seccion_uno > h2 {
+	color: #F8EEDF;
+	font-size: 2rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.seccion_uno:hover {
+	transform: scale(1.02);
+	transition: transform 0.3s ease;
+}
+.seccion_dos {
+	padding: 50px 0;
+	background-image: url('../../imagenes/python/imagen_seccion_dos.jpg');
+	border-radius: 30px;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+.seccion_dos > h2 {
+	color: #F8EEDF;
+	font-size: 2rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.seccion_dos:hover {
+	transform: scale(1.02);
+	transition: transform 0.3s ease;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8E1616;
+    color: #F8EEDF;
+    padding: 5%;
+}
